@@ -16,7 +16,7 @@ public class App extends BasePage{
         ChromeOptions chromeOptions = new ChromeOptions();
 
         //配置等待策略：page load:normal,eager,none
-        chromeOptions.setCapability("pageLoadStrategy","eager");
+        chromeOptions.setCapability("pageLoadStrategy","normal");
         driver = new ChromeDriver(chromeOptions);
 
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
